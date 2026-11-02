@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember & Oak | Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">Ember & Oak</a>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#chef">Chef</a>
+      <button class="btn btn-small order-btn">Order</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text fade-in">
+      <p class="tagline">Fine Dining • Since 2010</p>
+      <h1>GOOD FOOD.<br>GREAT MOMENTS.</h1>
+      <p class="hero-desc">Fresh ingredients, bold flavors and a warm atmosphere. Come hungry, leave happy.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn">View Menu</a>
+        <button class="btn btn-outline order-btn">Order Now</button>
+      </div>
+    </div>
+    <div class="hero-image fade-in">
+      <!-- Replace this URL to change the hero image -->
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80" alt="Signature steak dish">
+    </div>
+  </section>
+  <!-- FOOD MENU -->
+  <section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <p class="section-sub">Fresh, hand-crafted dishes made every day.</p>
+    <div class="menu-grid">
+
+      <!-- To change a food image, replace the URL in src="..." -->
+      <div class="food-card">
+        <div class="food-img"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80" alt="Signature Steak"></div>
+        <div class="food-info">
+          <h3>Signature Steak</h3>
+          <p>Flame-grilled ribeye with garlic butter and herbs.</p>
+          <div class="food-bottom"><span class="price">$24</span><button class="btn btn-small add-btn">Add to Order</button></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-img"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80" alt="Truffle Pasta"></div>
+        <div class="food-info">
+          <h3>Truffle Pasta</h3>
+          <p>Fresh tagliatelle in a creamy black truffle sauce.</p>
+          <div class="food-bottom"><span class="price">$18</span><button class="btn btn-small add-btn">Add to Order</button></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-img"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80" alt="Grilled Salmon"></div>
+        <div class="food-info">
+          <h3>Grilled Salmon</h3>
+          <p>Atlantic salmon with lemon, asparagus and herbs.</p>
+          <div class="food-bottom"><span class="price">$22</span><button class="btn btn-small add-btn">Add to Order</button></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-img"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Gourmet Burger"></div>
+        <div class="food-info">
+          <h3>Gourmet Burger</h3>
+          <p>Juicy beef patty, aged cheddar and house sauce.</p>
+          <div class="food-bottom"><span class="price">$15</span><button class="btn btn-small add-btn">Add to Order</button></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-img"><img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=80" alt="Creamy Risotto"></div>
+        <div class="food-info">
+          <h3>Creamy Risotto</h3>
+          <p>Slow-cooked arborio rice with mushrooms and parmesan.</p>
+          <div class="food-bottom"><span class="price">$17</span><button class="btn btn-small add-btn">Add to Order</button></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-img"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80" alt="Chocolate Dessert"></div>
+        <div class="food-info">
+          <h3>Chocolate Dessert</h3>
+          <p>Warm chocolate fondant with vanilla ice cream.</p>
+          <div class="food-bottom"><span class="price">$9</span><button class="btn btn-small add-btn">Add to Order</button></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SIGNATURE FOOD -->
+  <section class="signature" id="signature">
+    <div class="signature-image">
+      <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=900&q=80" alt="Chef's Special Tomahawk">
+    </div>
+    <div class="signature-text">
+      <p class="tagline">Chef's Signature</p>
+      <h2>The Ember Tomahawk</h2>
+      <p class="signature-desc">Our legendary 800g tomahawk steak, dry-aged for 30 days and cooked over oak fire. Served with roasted vegetables and red wine sauce.</p>
+      <p class="signature-price">$48</p>
+      <button class="btn add-btn">Order Now</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p class="about-story">
+      Ember & Oak started as a small family kitchen with one simple idea: cook honest food
+      with great ingredients. Today we still cook everything fresh, every day, over real fire.
+    </p>
+    <div class="info-grid">
+      <div class="info-card"><h3>Location</h3><p>123 Main Street<br>Your City, 12345</p></div>
+      <div class="info-card"><h3>Opening Hours</h3><p>Mon–Fri: 11am – 10pm<br>Sat–Sun: 10am – 11pm</p></div>
+      <div class="info-card"><h3>Contact</h3><p>+1 234 567 890<br>hello@emberandoak.com</p></div>
+    </div>
+  </section>
+  
+  <!-- CHEF -->
+  <section class="chef" id="chef">
+    <div class="chef-image">
+      <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=700&q=80" alt="Head Chef">
+    </div>
+    <div class="chef-text">
+      <p class="tagline">Meet The Chef</p>
+      <h2>Chef Marco Rossi</h2>
+      <p class="chef-role">Head Chef</p>
+      <p class="chef-bio">With over 15 years in kitchens across Italy and France, Marco brings classic technique and bold, modern flavor to every plate.</p>
+      <p class="chef-philosophy">"Great food starts with great ingredients. Keep it simple, cook it with respect."</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h3>Ember & Oak</h3>
+    <p>123 Main Street, Your City, 12345</p>
+    <p class="socials">Instagram • Facebook • TikTok</p>
+    <p class="copyright">© 2025 Ember & Oak. All rights reserved.</p>
+  </footer>
+
+  <!-- ORDER POPUP -->
+  <div class="modal" id="order-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="close-modal">✕</button>
+      <h2>Your Order</h2>
+      <div id="order-items"></div>
+      <div class="order-total">Total: <span id="order-total">$0</span></div>
+      <button class="btn" id="place-order">Place Order</button>
+      <p class="order-message" id="order-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
